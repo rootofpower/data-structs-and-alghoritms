@@ -1,0 +1,24 @@
+read 1
+load 1
+jgtz continue
+halt
+
+continue:
+load 1
+store 2
+
+loop:
+load 1
+sub =1
+store 1
+
+load 2
+add 1
+store 2
+
+load 1
+jgtz loop
+
+load 2
+write 2
+halt

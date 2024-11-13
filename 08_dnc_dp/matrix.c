@@ -1,0 +1,1 @@
+#include <limits.h>#include "matrix.h"int chainMatrixMultiplication(int *r, int n){    int m[n+1][n+1];    int i,j,k,L,q;	for(i = 1; i<=n; i++)m[i][i] = 0;			// Doplnit ...	    	return m[1][1];}

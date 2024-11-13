@@ -1,0 +1,26 @@
+read 1
+load 1 
+jz endifzero
+
+load =1
+store 2
+
+loop:
+load 2
+mul =2
+store 2
+
+load 1
+sub =1
+store 1
+jgtz loop
+jz end
+
+endifzero:
+load =1
+store 2
+
+end:
+load 2
+write 2
+halt
